@@ -31,7 +31,7 @@ $ git log --pretty=oneline
 -- 版本回退
 $ git reset --hard 4f9524e94af2923b0819c6157bb7f28b025e16a9
 $ git reset --hard a105
--- 查看命令历史
+-- 查看历史提交记录
 $ git reflog
 
 -- 工作区和暂存区
@@ -39,6 +39,21 @@ $ git reflog
 暂存区：stage，index
     第一步：git add把文件添加进暂存区；
     第二步：git commit把暂存区的所有内容提交到当前分支。
-$ git hahah
+    若不进行 git add 就进行git commit 那么不会将工作区的内容进行提交,仅仅将暂存区的内容进行提交
+-- 把readme.txt文件在工作区的修改全部撤销,若已经添加至暂存区,则无法撤回
+$ git checkout -- readme.txt
+此命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令.
+-- 将暂存区的修改全部撤销
+$ git reset HEAD readme.txt（撤销暂存区）
+$ git checkout -- readme.txt（撤销工作区）
+
+
+
+
+
+
+
+
+
 
 
