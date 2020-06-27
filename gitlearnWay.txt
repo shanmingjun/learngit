@@ -33,3 +33,12 @@ $ git reset --hard 4f9524e94af2923b0819c6157bb7f28b025e16a9
 $ git reset --hard a105
 -- 查看命令历史
 $ git reflog
+
+-- 工作区和暂存区
+版本库：Repository
+暂存区：stage，index
+    第一步：git add把文件添加进暂存区；
+    第二步：git commit把暂存区的所有内容提交到当前分支。
+
+
+
