@@ -34,6 +34,9 @@ $ git reset --hard a105
 -- 查看历史提交记录
 $ git reflog
 
+-- 比对单个文件差异
+$ git diff HEAD -- readme.txt
+
 -- 工作区和暂存区
 版本库：Repository
 暂存区：stage，index
@@ -46,6 +49,8 @@ $ git checkout -- readme.txt
 -- 将暂存区的修改全部撤销
 $ git reset HEAD readme.txt（撤销暂存区）
 $ git checkout -- readme.txt（撤销工作区）
+-- 删除文件
+$ git rm test.txt
 
 
 
